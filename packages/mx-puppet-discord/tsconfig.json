@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2016",
+    "noImplicitAny": false,
+    "inlineSourceMap": true,
+    "outDir": "./build",
+    "types": ["node"],
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+  },
+  "compileOnSave": true,
+  "include": [
+    "src/**/*"
+  ],
+  "references": [
+    { "path": "../matrix-slack-parser" },
+    { "path": "../soru-slack-client" },
+    { "path": "../mx-puppet-bridge" }
+  ]
+}

@@ -1,0 +1,8 @@
+.idea
+
+lib
+build
+node_modules
+
+*.swp
+

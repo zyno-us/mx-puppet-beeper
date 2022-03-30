@@ -1,0 +1,13 @@
+image: node:12
+
+stages:
+  - publish
+
+deploy:
+  stage: publish
+  script:
+    - echo -e '.gitlab-ci.yml\n.npmrc'>.npmignore
+    - echo '//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}'>.npmrc
+    - npm install
+    - npm run build
+    - npm publish

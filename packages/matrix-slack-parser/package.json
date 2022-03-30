@@ -1,0 +1,54 @@
+{
+  "name": "matrix-slack-parser",
+  "version": "0.1.5-n",
+  "description": "A parser for matrix and discord messages to each others format",
+  "main": "./lib/src/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "test": "npm run-script build && mocha",
+    "lint": "tslint --project ./tsconfig.json -t stylish",
+    "coverage": "tsc && nyc mocha",
+    "build": "tsc"
+  },
+  "respository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/nova/matrix-slack-parser.git#novachat"
+  },
+  "keywords": [],
+  "author": "Sorunome",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Sorunome/matrix-slack-parser/issues"
+  },
+  "homepage": "https://github.com/Sorunome/matrix-slack-parser",
+  "files": [
+    "src/*",
+    "lib/*"
+  ],
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "escape-html": "^1.0.3",
+    "node-emoji": "^1.10.0",
+    "node-html-parser": "^1.4.5",
+    "slack-markdown": "0.0.5",
+    "unescape-html": "^1.1.0"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@slack/types": "^1.5.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.11.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3",
+    "why-is-node-running": "^2.1.2"
+  },
+  "publishConfig": {
+    "@nova:registry": "https://gitlab.com/api/v4/projects/18682577/packages/npm/"
+  }
+}

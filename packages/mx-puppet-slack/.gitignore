@@ -1,0 +1,6 @@
+config.yaml
+slack-registration.yaml
+slack-registration.json
+node_modules
+build
+*.db

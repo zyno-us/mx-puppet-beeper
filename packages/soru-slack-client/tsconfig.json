@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2016",
+        "noImplicitAny": false,
+        "declaration": true,
+        "outDir": "./lib",
+        "types": ["mocha", "node"],
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "composite": true
+    },
+    "compileOnSave": true,
+    "include": [
+        "src/**/*",
+        "test/**/*",
+    ]
+}

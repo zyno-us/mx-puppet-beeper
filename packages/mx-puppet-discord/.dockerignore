@@ -1,0 +1,6 @@
+node_modules
+mx-puppet-bridge/node_modules
+config.yaml
+build
+discord-registration.yaml
+*.db

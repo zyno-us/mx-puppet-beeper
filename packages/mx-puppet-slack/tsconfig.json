@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2016",
+        "noImplicitAny": false,
+        "outDir": "./build",
+        "types": ["node"],
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "incremental": true,
+        "sourceMap": true,
+        "allowJs": false,
+        "baseUrl": ".",
+        "paths": {
+            "soru-slack-client": [ "../soru-slack-client/lib/src" ],
+            "@sorunome/matrix-bot-sdk": ["../soru-matrix-bot-sdk/lib/src"]
+        }
+    },
+    "compileOnSave": true,
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        { "path": "../matrix-slack-parser" },
+        { "path": "../soru-slack-client" },
+        { "path": "../mx-puppet-bridge" }
+    ]
+}

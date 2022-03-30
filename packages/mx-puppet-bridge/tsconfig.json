@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2016",
+        "noImplicitAny": false,
+        "declaration": true,
+        "outDir": "./lib",
+        "types": ["mocha", "node"],
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "composite": true,
+        "baseUrl": ".",
+        "paths": {
+            "@sorunome/matrix-bot-sdk": ["../soru-matrix-bot-sdk/lib/src"]
+        }
+    },
+    "compileOnSave": true,
+    "include": [
+        "src/**/*",
+        "test/**/*"
+    ],
+    "references": [
+        { "path": "../soru-matrix-bot-sdk" },
+    ]
+}
